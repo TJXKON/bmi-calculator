@@ -1,5 +1,5 @@
 function formatName(user) {
-    return user.firstName + ' ' + user.lastName;
+    return user.lastName + ' ' + user.firstName;
   }
   
   const user = {
