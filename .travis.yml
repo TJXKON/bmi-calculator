@@ -4,8 +4,7 @@ node_js:
 cache: npm
 
 install:
-  - npm audit fix --force
-  - npm install
+  - yarn
 
 script:
   - npm run test -- --coverage
