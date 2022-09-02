@@ -1,10 +1,11 @@
 language: node_js
 node_js:
-  - 16
+  - npm audit fix --force
 cache: npm
 
 install:
-  - npm install --force
+  - npm audit fix --force
+  - npm install
 
 script:
   - npm run test -- --coverage
@@ -12,8 +13,9 @@ script:
 
 after_success:
   - CODECOV_TOKEN=$codecov_token npm run report-coverage
-
-
+  
+after_script:
+  - COVERALLS_REPO_TOKEN=$coveralls_repo_token npm run coveralls
 
 deploy:
   provider: pages
