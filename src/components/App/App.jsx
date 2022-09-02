@@ -44,8 +44,10 @@ const App = () => {
 
   return (
     <div className='container'>
-      <div className='row center'>
+      <div class='header-wrapper'>
+      <div class='row-center'>
         <h1 className='white-text'> BMI Tracker </h1>
+      </div>
       </div>
       <div className='row'>
         <div className='col m12 s12'>
@@ -54,6 +56,10 @@ const App = () => {
           <div>
             <div className='row center'>
               <h4 className='white-text'>7 Day Data</h4>
+              <span style={{color:"#87CEEB", fontSize:25}}>Underweight </span>
+              <span style={{color:"#50C878", fontSize:25}}>Healthy </span>
+              <span style={{color:"#FF8C00", fontSize:25}}>Overweight </span>
+              <span style={{color:"#F62817", fontSize:25}}>Obese </span>
             </div>
             <div className='data-container row'>
               {state.length > 0 ? (
