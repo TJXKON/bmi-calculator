@@ -36,7 +36,7 @@ label {
 .calculate-btn:hover {
   background-color: #fff;
   transform: translate(0px, -2px);
-  color: #5364c3;
+  color: #5d70da;
   box-shadow: 0px 15px 30px -12px rgba(255, 255, 255, 0.2);
 }
 
@@ -69,7 +69,7 @@ label {
 }
 
 .card {
-  background-color: #274881 !important;
+  background-color: #23447e !important;
   color: white;
 }
 
